@@ -1,0 +1,5 @@
+#!/bin/bash
+g++ main.cpp ../sliders.cpp `hpaxxconf -l` -o a
+python generate.py
+./a
+python check.py
